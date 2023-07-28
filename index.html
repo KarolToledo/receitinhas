@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="As melhores receitas por Ka no fogão">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Receitinhas</title>
+    <link rel="shortcut icon" href="./src/imagens/Pot-icon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="#" class="logo">
+            <img src="src/imagens/pot-m.png" alt="panela" class="imagem">
+            <span class="titulo">Ka no fogão</span>
+        </a>
+
+        <nav class="navegacao">
+            <input type="checkbox" id="menu-hamburguer">
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul class="lista">
+                <li class="item">
+                    <a href="#receitas">Receitas</a>
+                </li>
+                <li class="item">
+                    <a href="#doces">Doces</a>
+                </li>
+                <li class="item">
+                    <a href="#salgados">Salgados</a>
+                </li>
+                <li class="item">
+                    <a href="#contatos">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="nosso-site">
+        <h2>As melhores receitas de Ka</h2>
+    </section>
+
+    <section class="sobre">
+        <div class="receitas" id="doces">
+            <h3>Doces</h3>
+            <p>Encontre receitas para todos os momentos, sobremesas e mais, receitas rápidas e fáceis.</p>
+            <a href="./src/receitas/receitas-doces.html" class="ver-receitas" target="_blank">Ver receitas doces</a>
+        </div>
+        <div class="image right"></div>
+        <div class="image left"></div>
+        <div class="receitas" id="salgados">
+            <h3>Salgados</h3>
+            <p>Encontre receitas fáceis, de preparo rápido e que ficam uma delícia.</p>
+            <a href="./src/receitas/receitas-salgadas.html" target="_blank" class="ver-receitas">Ver receitas salgadas</a>
+        </div>
+    </section>
+
+    <footer class="rodape" id="contato">
+        <nav class="navegacao">
+            <a href="#" class="logo">
+                <img src="src/imagens/pot-m.png" alt="Logo panela" class="imagem" id="receitas">
+                <h4 class="titulo">Ka no fogão</h4>
+            </a>
+
+            <div class="redes-sociais" id="contatos">
+                <a href="#" class="rede-social">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="rede-social">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="#" class="rede-social">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </nav>
+
+        <p class="cpyright">Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+
+</html>

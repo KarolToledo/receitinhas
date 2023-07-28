@@ -1,0 +1,176 @@
+body{
+    grid-template-areas:
+    header header header header 
+    nosso nosso nosso nosso
+    sobre sobre sobre sobre
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.nosso-site{
+    grid-area: nosso;
+}
+
+.sobre{
+    grid-area: sobre;
+}
+
+/* nosso-site */
+.nosso-site{
+    height: 80vh;
+    background: url('../imagens/livro-receitas.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosso-site h2{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: rgb(14, 3, 3);
+    background-color: #ffffff48;
+    box-shadow: 3px 3px 30px 3px violet;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+@media(max-width: 425px){
+    .nosso-site{
+        height: 60vh;
+    }
+
+    .nosso-site h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/* sobre */
+
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    max-width: 1920px;
+    margin: 0 auto; 
+}
+
+.sobre .receitas{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.sobre .receitas h3{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.sobre .receitas p{
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+.sobre .receitas .ver-receitas{
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+
+.sobre .receitas .ver-receitas:hover{
+    font-weight: 700;
+}
+
+.sobre .image{
+    height: 100%;
+    width: 100%; 
+}
+
+.sobre .image.right{
+    background: url('../imagens/bolo-naked.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.sobre .image.left{
+    background: url('../imagens/salgado.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+/* sobre responsivo */
+@media(max-width: 452px){
+    .sobre .receitas{
+        text-align: center;
+    }
+
+    .sobre{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/* rodape */
+.rodape{
+    padding: 80px 0 20px 0;
+
+}
+
+.rodape .navegacao{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .redes-sociais{
+    display: flex;
+}
+
+.rodape .redes-sociais a{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    padding: 15px;
+    width: 65px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover{
+    background-color: violet;
+}
+
+.rodape .navegacao .logo .imagem{
+    width: 100px;
+}
+
+.rodape .cpyright{
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media(max-width: 475px){
+    .rodape .navegacao .logo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .rodape .navegacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
