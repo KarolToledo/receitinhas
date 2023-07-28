@@ -5,6 +5,11 @@
     margin: 20px 0;
 }
 
+.cor{
+    background-color: blue;
+}
+
+
 .container{
     border-bottom: 3px solid black;
     display: grid;
@@ -86,5 +91,10 @@
 
 .bolinho .imagem .foto-da-receita{
     background: url('../imagens/bolinho.jpeg') center center no-repeat;
+    background-size: cover;
+}
+
+.creme-com-frango .imagem .foto-da-receita{
+    background: url('../imagens/creme-com-frango.jpg') center center no-repeat;
     background-size: cover;
 }
